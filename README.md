@@ -6,5 +6,4 @@ This challenge required modifications to the starter code that would check the c
 <img src="screenshot.png">
 
 ## Links
-<a href="https://github.com/jrdnwlkr/smelly-garbage-truck">Repository</a>
-<a href="https://jrdnwlkr.github.io/smelly-garbage-truck">Live Application</a>
+<a href="https://github.com/jrdnwlkr/smelly-garbage-truck">Repository</a> | <a href="https://jrdnwlkr.github.io/smelly-garbage-truck">Live Application</a>
