@@ -22,6 +22,7 @@ document.getElementById("currentDay").innerHTML = currentDay
   console.log(currentHour);
   var schedule = document.getElementById("#schedule");
   var scheduleArray = [schedule];
+  var selectedHour = "";
 
   $(".saveBtn").on("click", function() {
     var hour = $(this).parent().attr('id');
@@ -55,22 +56,22 @@ document.getElementById("currentDay").innerHTML = currentDay
   // current hour in 24-hour time?
   //
 
-  // function applyColors () {
-  //   $('.time-block').each(function() {
-  //     var selectedHour = 
-  //     (this).attr('id').split('-')[1];
-  //   }); //splits the word and gets the second word!!
+  function applyColors () {
+    $('.time-block').each(function() {
+      var selectedHour = 
+      parseInt($(this).attr('id').split('-')[1]);
+    }); //splits the word and gets the second word!!
 
-  //   if (selectedHour === currentHour) {
-  //     $(this).addClass('present');
-  //   } else if (selectedHour < currentHour) {
-  //     $(this).addClass('past');
-  //   } else {
-  //     $(this).addClass('future');
-  //   }
-  // };
+    if (selectedHour === currentHour) {
+      $(this).addClass('present');
+    } else if (selectedHour < currentHour) {
+      $(this).addClass('past');
+    } else {
+      $(this).addClass('future');
+    }
+  };
 
-  // applyColors()
+  applyColors()
  
 
 
